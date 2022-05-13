@@ -206,6 +206,13 @@ function NavigationMenu({ column: vertical }) {
       >
         <Tab label='Home' value='' component={NavLink} to={ROUTE_PATHS.DEFAULT} />
         {/* [hygen] Import links */}
+        <Tab
+          label='Centerline classification'
+          value='centerlines'
+          component={NavLink}
+          to={ROUTE_PATHS.CENTERLINE_CLASSIFICATION}
+          className={classes.navLink}
+        />
       </Tabs>
     </Grid>
   );
